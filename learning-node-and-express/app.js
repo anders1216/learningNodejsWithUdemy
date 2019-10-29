@@ -1,3 +1,3 @@
-const message = "Hello world with Node and express!"
+const message = "Hello world with Node & express!"
 console.log(message)
 
