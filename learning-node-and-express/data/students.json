@@ -1,16 +1,16 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Allessandra",
         "course": "Computer Science"   
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "Sandra",
         "course": "Computer Science"   
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Casandra",
         "course": "Computer Science"   
     }
