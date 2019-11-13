@@ -33,4 +33,11 @@ router.delete(`/`, (req, res) => {
     res.end()
 })
 
+router.param('id', (req, res, next, id) => {
+    if ( isNaN(id)) {
+        next(`${id} is NOT a valid entry`)
+    }
+    next();
+});
+
 module.exports = router
