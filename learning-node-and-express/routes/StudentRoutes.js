@@ -34,7 +34,7 @@ router.delete(`/`, (req, res) => {
 })
 
 router.param('id', (req, res, next, id) => {
-    if ( isNaN(id)) {
+    if (isNaN(id)) {
         next(`${id} is NOT a valid entry`)
     }
     next();
