@@ -7,6 +7,7 @@ const PORT = 3000;
 
 const server = express();
 
+server.user(morgan('tiny'));
 
 const STUDENT_BASE_URL = buildURL("v1", "students");
 
