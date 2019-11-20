@@ -1,10 +1,13 @@
 import express from 'express';
+import morgan from 'morgan';
 import StudentRoutes from './routes/StudentRoutes'
 import _ from 'lodash'
 
 const PORT = 3000;
 
 const server = express();
+
+server.use(morgan('tiny'));
 
 const buildURL = (version, path) => {
     return `/api/${version}/${path}`
